@@ -47,7 +47,7 @@ function cerrarModal() {
 }
 
 botonesCerrar.forEach(function (boton) {
-    boton.addEventListener('click', cerrarModal());
+    boton.addEventListener('click', cerrarModal);
 });
 
 document.addEventListener("keydown", function (event) {
