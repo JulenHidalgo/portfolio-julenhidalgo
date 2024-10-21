@@ -1,0 +1,127 @@
+* {box-sizing:border-box}
+
+/*Fuente*/
+@font-face {
+  font-family: "Agency";
+  src: url('../FONT/agencyfb_reg.ttf') format('truetype');
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 70%;
+  position: relative;
+  border: 5px solid #45c3ed;
+  border-radius: 35px;
+  box-shadow: 0px 0px 10px 5px rgba(69, 195, 237, 0.6);
+  margin: 2vw;
+}
+
+.slideshow-container button{
+  font-family: "Agency";
+  font-size: 1.2vw;
+}
+
+.slideshow-container button:hover{
+  box-shadow: 0px 0px 10px 5px rgba(69, 195, 237, 0.6);
+  border-radius: 35px;
+  border: none;
+}
+
+.noticiasContenido:hover{
+  box-shadow: 0px 0px 15px 15px rgba(69, 195, 237, 0.6);
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgSlides{
+    width: 50vw;
+    margin: 1vw;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 38%;
+  width: auto;
+  padding: 1.5vw;
+  color: #45c3ed;
+  font-weight: bold;
+  transition: 0.6s ease;
+  border-radius: 3px 0 0 3px;
+  user-select: none;
+  z-index: 1;
+  font-size: 2vw;
+  margin: 0px -4.4vw;
+}
+
+.prevNextNoticias{
+  top: 35%;
+  display: flex;
+  align-items: center;
+  font-size: 1.6vw;
+  padding: 1.2vw;
+  height: 30%;
+  margin: 0px -3.5vw;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(69, 195, 237,0.8);
+  color: white;
+
+}
+
+/* Caption text */
+.texto {
+  color: black;
+  display: flex;
+  font-size: 15px;
+  padding: 8px 12px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tituloProyecto span{
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
