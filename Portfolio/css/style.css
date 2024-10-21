@@ -144,6 +144,8 @@ header a:hover{
 
 .modal {
     display: none;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -159,8 +161,8 @@ header a:hover{
     margin: 1vw auto;
     padding: 1vw;
     border: 1px solid #888;
-    width: 80%;
-    height: fit-content;
+    width: 80vw;
+    height: 80vh;
     display: flex;
     justify-content: center;
     border-radius: 1vw;
@@ -170,15 +172,10 @@ header a:hover{
 
 .modalContenido img{
     margin: 1vw;
+    width: 70%;
 }
-
-#modalContenidoCooking img{
-    width: 80%;
-}
-#modalContenidoAuziker img{
-    width: 100%;
-}
-#modalContenidoSign img{
+.modalContenido video{
+    margin: 5vw;
     width: 70%;
 }
 
