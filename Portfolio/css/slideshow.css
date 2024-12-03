@@ -43,6 +43,10 @@
     margin: 1vw;
 }
 
+.slideVertical{
+  width: 20vw;
+}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
