@@ -66,18 +66,11 @@ header a:hover{
     height: 20vw;
     margin-top: 2vw;
 }
-.imagenes a{
-    width: 95%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.imagenes a:hover{
-    width: 100%;
-}
-.imagenes a img{
+
+.imagenes img{
     width: 80%;
     border-radius: 5%;
+    max-width: max-content;
 }
 .enlaces{
     width: 100%;
