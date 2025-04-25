@@ -1,9 +1,11 @@
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box;
+}
 
 /*Fuente*/
 @font-face {
   font-family: "Agency";
-  src: url('../FONT/agencyfb_reg.ttf') format('truetype');
+  src: url("../FONT/agencyfb_reg.ttf") format("truetype");
 }
 
 /* Slideshow container */
@@ -16,39 +18,41 @@
   margin: 2vw;
 }
 
-.slideshow-container button{
+.slideshow-container button {
   font-family: "Agency";
   font-size: 1.2vw;
 }
 
-.slideshow-container button:hover{
+.slideshow-container button:hover {
   box-shadow: 0px 0px 10px 5px rgba(69, 195, 237, 0.6);
   border-radius: 35px;
   border: none;
 }
 
-.noticiasContenido:hover{
+.noticiasContenido:hover {
   box-shadow: 0px 0px 15px 15px rgba(69, 195, 237, 0.6);
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.imgSlides{
-    width: 45vw;
-    margin: 1vw;
+.imgSlides {
+  max-width: 50vw;
+  margin: 1vw;
+  max-height: 50vh;
 }
 
-.slideVertical{
+.slideVertical {
   width: 20vw;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 38%;
@@ -64,7 +68,7 @@
   margin: 0px -4.4vw;
 }
 
-.prevNextNoticias{
+.prevNextNoticias {
   top: 35%;
   display: flex;
   align-items: center;
@@ -81,10 +85,10 @@
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(69, 195, 237,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(69, 195, 237, 0.8);
   color: white;
-
 }
 
 /* Caption text */
@@ -98,9 +102,9 @@
   justify-content: center;
 }
 
-.tituloProyecto span{
-    font-weight: bold;
-    font-size: 2.5vw;
+.tituloProyecto span {
+  font-weight: bold;
+  font-size: 2.5vw;
 }
 
 /* The dots/bullets/indicators */
@@ -115,7 +119,8 @@
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -126,6 +131,30 @@
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slideshow-container {
+    width: 95%;
+    border-radius: 15px;
+  }
+
+  .imgSlides,
+  video {
+    max-width: 90vw;
+    max-height: 30vh;
+  }
+
+  .prev,
+  .next {
+    font-size: 6vw;
+    padding: 3vw;
+    margin: 0px -6vw;
+  }
 }
